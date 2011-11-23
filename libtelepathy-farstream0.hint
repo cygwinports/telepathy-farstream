@@ -1,0 +1,6 @@
+category: Net
+requires: libdbus-glib_1_2 libglib2.0_0 libgstfarsight0.10_0 libgstreamer0.10_0 libtelepathy-glib0
+external-source: telepathy-farstream
+sdesc: "Telepathy Media Signalling library (sources)"
+ldesc: "Library implementing the Telepathy Media Signalling API using 
+Farsight2."

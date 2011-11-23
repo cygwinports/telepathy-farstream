@@ -1,0 +1,18 @@
+inherit pygtk gnome2
+
+DESCRIPTION="Telepathy Farstream connection manager"
+HOMEPAGE="http://telepathy.freedesktop.org/wiki/"
+SRC_URI="http://telepathy.freedesktop.org/releases/${PN}/${P}.tar.gz"
+
+PKG_NAMES="lib${PN}0 lib${PN}-devel python-tpfarstream"
+libtelepathy_farstream0_CONTENTS="usr/bin/*-0.dll usr/share/doc/"
+libtelepathy_farstream_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/"
+python_tpfarstream_CONTENTS="${PYTHON_SITELIB#/}/"
+
+src_compile() {
+	cd ${S}
+	gnome2_autoreconf
+	cd ${B}
+	gnome2_configure
+	cygmake tpfarstream_la_LDFLAGS="-module -avoid-version -no-undefined -lpython${PYTHON_VERSION}"
+}
