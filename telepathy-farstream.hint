@@ -1,4 +1,4 @@
 category: Net
 sdesc: "Telepathy Media Signalling library (sources)"
 ldesc: "Library implementing the Telepathy Media Signalling API using 
-Farsight2."
+Farstream."
