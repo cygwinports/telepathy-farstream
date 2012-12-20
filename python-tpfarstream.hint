@@ -1,6 +1,0 @@
-category: Net
-requires: libgcc1 libglib2.0_0 libgstreamer0.10_0 libtelepathy-farstream2 libtelepathy-glib0 python python-gobject python-gst0.10 python-farstream
-external-source: telepathy-farstream
-sdesc: "Telepathy Media Signalling library (sources)"
-ldesc: "Library implementing the Telepathy Media Signalling API using 
-Farstream."
