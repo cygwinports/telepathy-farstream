@@ -8,12 +8,14 @@ SUMMARY="Telepathy Media Signalling library"
 DESCRIPTION="Library implementing the Telepathy Media Signalling API using
 Farstream."
 HOMEPAGE="http://telepathy.freedesktop.org/wiki/"
-SRC_URI="http://telepathy.freedesktop.org/releases/${PN}/${P}.tar.gz"
+SRC_URI="http://telepathy.freedesktop.org/releases/${NAME}/${NAME}-${VERSION}.tar.gz"
 
-PKG_NAMES="lib${PN}3 lib${PN}-devel girepository-TelepathyFarstream0.6"
+PKG_NAMES="lib${NAME}3 lib${NAME}-devel lib${NAME}-doc girepository-TelepathyFarstream0.6"
 libtelepathy_farstream3_DOCS="COPYING ChangeLog NEWS README"
 libtelepathy_farstream3_CONTENTS="usr/bin/*-3.dll"
-libtelepathy_farstream_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/"
+libtelepathy_farstream_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
+libtelepathy_farstream_doc_CATEGORY="Doc"
+libtelepathy_farstream_doc_CONTENTS="usr/share/gtk-doc/"
 girepository_TelepathyFarstream0_6_CONTENTS="usr/*/gir*/TelepathyFarstream-0.6.*"
 
 src_compile() {
