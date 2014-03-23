@@ -1,9 +1,9 @@
 inherit gnome2
 
 NAME="telepathy-farstream"
-VERSION=0.6.0
+VERSION=0.6.1
 RELEASE=1
-CATEGORY="Net"
+CATEGORY="Libs"
 SUMMARY="Telepathy Media Signalling library"
 DESCRIPTION="Library implementing the Telepathy Media Signalling API using
 Farstream."
